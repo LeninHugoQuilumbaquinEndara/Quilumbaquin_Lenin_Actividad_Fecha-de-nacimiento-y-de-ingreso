@@ -35,11 +35,16 @@ public class TestEmpleadoFecha {
         fIngreso = new Fecha(anio,mes,dia);
         empleado1 =new Empleado(nombre,fNacimiento,fIngreso);
         System.out.println("\n Resumen de los datos Ingresados");
-        System.out.println(empleado1);
-        System.out.println("\n * Segun la fecha de nacimiento :");
+        System.out.println(nombre);
+        System.out.println("Fecha de nacimiento  : "+fNacimiento);
+        System.out.println("* Segun la fecha de nacimiento :");
         EdadNacimiento(fNacimiento);
-        System.out.println("\n * Segun la fecha de ingreso");
+        System.out.println("Fecha de ingreso : "+fIngreso);
+        System.out.println("* Segun la fecha de ingreso");
         EdadIngreso(fIngreso);
+      
+
+
     }
     public static void EdadNacimiento(Fecha fNacimiento){
         int anio=fNacimiento.getAnio();
